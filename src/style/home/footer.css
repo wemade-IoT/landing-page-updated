@@ -1,0 +1,71 @@
+.footer {
+  background-color: #24231D; 
+  color: #FFFFFF;
+  padding: 40px 0;
+}
+
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Logo and Address Section */
+.footer__left {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer__logo {
+  height: 45px;
+  width: 45px;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__brand-name {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  color: #FFFFFF;
+}
+
+.footer__tagline {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__address-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer__address-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
