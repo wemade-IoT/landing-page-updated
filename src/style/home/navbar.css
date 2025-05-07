@@ -48,7 +48,7 @@ header {
     display: flex;
 }
 
-#nav_button {
+#nav__button {
     background-color: var(--color-green-dark);
     color: var(--color-light);
     padding: 0.5rem 1.5rem;
@@ -59,7 +59,7 @@ header {
     transition: all 0.5s; 
 }
 
-#nav_button:hover {
+#nav__button:hover {
     transform: scale(1.05);
     transition: all 0.5s; 
 }
