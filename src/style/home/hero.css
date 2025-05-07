@@ -61,7 +61,7 @@
   cursor:pointer;
 }
 
-.content_information button > svg{
+.content__information button > svg{
   transform: rotate(-50deg);
   margin-top: -5px;
 }
