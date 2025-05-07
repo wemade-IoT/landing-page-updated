@@ -201,3 +201,31 @@
   background-color: var(--color-green-light);
   color: #24231D;
 }
+
+/* Social Media Section */
+.footer__social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__social-link {
+  display: inline-block;
+  transition: transform 0.2s;
+  background-color: var(--color-green-dark);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social-link:hover {
+  transform: scale(1.1);
+  background-color: var(--color-green-light);
+}
+
+.footer__social-icon {
+  width: 18px;
+  height: 18px;
+}
