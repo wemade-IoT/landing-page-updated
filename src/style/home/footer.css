@@ -90,6 +90,17 @@
   font-size: 0.9rem;
 }
 
+.footer__link-contact {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer__link-contact:hover {
+  color: var(--color-green-light);
+}
+
 /* Icons */
 .footer__icon {
   width: 20px;
