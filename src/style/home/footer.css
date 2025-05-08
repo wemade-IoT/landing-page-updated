@@ -182,3 +182,30 @@
 .footer__button:hover {
   background-color: var(--color-green-light);
 }
+
+@media (max-width: var(--breakpoint-laptop)) {
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: var(--breakpoint-tablet)) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer__brand-column {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: var(--breakpoint-mobile)) {
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer__nav-column,
+  .footer__contact-column {
+    margin-top: 1rem;
+  }
+}
