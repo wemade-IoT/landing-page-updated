@@ -15,6 +15,7 @@ function applyResponsiveStyles() {
     const width = window.innerWidth;
 
     grid.style.gridTemplateColumns = 'repeat(4, 219px)';
+    grid.style.gap = '50px';
     grid.style.gridTemplateRows = 'repeat(2, 320px)';
 
     if (width <= breakpointTablet) {
