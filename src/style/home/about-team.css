@@ -30,7 +30,7 @@
   display: grid;
   grid-template-columns: repeat(4, 219px);
   grid-template-rows: repeat(2, 320px);
-  gap: 24px;
+  gap: 50px;
   justify-content: center;
   margin: 0 auto;
   position: relative;
