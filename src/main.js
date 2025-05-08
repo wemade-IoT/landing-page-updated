@@ -1,1 +1,2 @@
-console.log('sexo');
+//console.log('sexo');
+import './scripts/photoswipe';
