@@ -75,9 +75,63 @@
   text-align: left;
 }
 
+
+.about-team__card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-team__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--color-green-dark);
+  object-fit: cover;
+}
+
+.about-team__name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.about-team__position-subtitle {
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.about-team__spacer {
+  height: 30px;
+}
+
+.about-team__role {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+
 .divider {
   border: 1px solid #C3C1C1;
   margin: 10px 0;
+  width: 100%;
+}
+
+.about-team__link {
+  color: var(--color-green-dark);
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.redirect-icon {
+  display: inline-block;
+  margin-left: 2px;
 }
 
 @media (max-width: var(--breakpoint-laptop)) {
