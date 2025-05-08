@@ -61,9 +61,15 @@
   cursor:pointer;
 }
 
-.content_information button > svg{
+.content__information button > svg{
   transform: rotate(-50deg);
   margin-top: -5px;
+}
+
+@media screen and (max-width: 1280px){
+  .hero_content div:nth-child(1){
+    margin-top: 50px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
