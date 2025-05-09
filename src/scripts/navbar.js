@@ -18,6 +18,8 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("overlay").style.width = "100%"; 
         overlay.style.opacity = "0.8";
+        document.getElementById("overlay").style.minHeight = "100%"; 
+        overlay.style.opacity = "0.8"
 
 }
 
