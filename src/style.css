@@ -2,12 +2,19 @@
 
 /* si necesitamos agregar otra fuente asegurar que sea en formato woff2, es la mas optimizada */
 @font-face {
-  font-family: "MiFuentePersonalizada";
-  src: url("/fonts/CoveredByYourGrace.woff2") format("woff2"),
-    url("/fonts/Inter.woff") format("woff2");
+  font-family: "CoveredByYourGrace";
+  src: url("/fonts/CoveredByYourGrace.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
-  font-weight: 100 - 900;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
 }
 
 :root {
@@ -31,7 +38,7 @@
 
   /* Variables para las fuentes */
   --font-primary: "Inter", sans-serif;
-  --font-secondary: "MiFuentePersonalizada", sans-serif;
+  --font-secondary: "CoveredByYourGrace", sans-serif;
 }
 
 body {
