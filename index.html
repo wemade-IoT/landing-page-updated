@@ -8,10 +8,38 @@
     <title>Eco Guardian</title>
   </head>
   <body>
-    <div id="app">
+    <div id="app">  
+        <div id="overlay" onclick="closeNav()" style = "width: 0%; opacity: 0;"></div>
+
+  
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#hero">Home</a>
+          <a href="#about-us">Eco Guardian</a>
+          <a href="#bento">Benefits</a>
+          <a href="#payments">Pricing</a>
+          <a href="#about-team">About Us</a>
+          <a href="#contact-us">Contact Us</a>
+          <a href="#payments" id="nav__button" style="display: inline-block; width: 10rem; margin-left: 1rem;">Get Started</a>
+
+
+        </div>
+
       <!----------- NAVBAR ------------->
-      <header><a href="#hero" style="height: 100%;">
-        <img src="/src/assets/icons/ecoguardian_logo-text.webp" alt="Logo" width="auto" height="100%" />
+      <header class="transparent">
+        <div class="navbar__container">
+           <a href="#hero" style="height: 100%; width: 10rem;">
+            <div style="display: flex; flex-direction: row;">
+              <img src="/src/assets/icons/ecoguardian_logo-text.webp" alt="Logo" width="auto" />
+              <div style="display: flex; flex-direction: column; margin-left: 0.5rem; align-items: start; justify-content: center;">
+                <h1 style="font-size: 1.5rem; transition: 0.5s;">
+                  EcoGuardian
+                </h1> 
+                <p style="font-size: 0.9rem; transition: 0.5s;">
+                  Nurturing your future
+                </p>
+              </div>
+            </div>
       </a>
         <nav class="navbar">
           <ul>
@@ -24,18 +52,24 @@
           </ul>
         </nav>
         <a href="#payments" id="nav__button">Get Started</a>
+        <span id="sidenav__button" style=" font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        </div>
+       
       </header>
       <main>
+        <div style="height: 100%;">
+
         <!----------- HERO SECTION ------------->
-        <section id="hero">
+        <section id="hero" style="height: 300px;">
           <strong>H</strong>
         </section>
         <!----------- ABOUT US SECTION ------------->
-        <section id="about-us">
-          <strong>O</strong>
+        <section id="about-us" style="height: 300px;">
+          <strong>O</strong>  
         </section>
         <!----------- BENTO GRID SECTION ------------->
-        <section id="bento">
+        <section id="bento" style="height: 300px;">
           <strong>T</strong>
         </section>
         <!----------- PAYMENTS SECTION ------------->
@@ -50,13 +84,15 @@
         <section id="contact-us">
           <strong>N</strong>
         </section>
+        </div>
       </main>
       <!----------- FOOTER ------------->
-      <footer style="border: 1px solid #000">
+      <footer style="border: 1px solid #000; height: 20%;">
         <p>© 2023 Eco Guardian</p>
         <p>All rights reserved.</p>
       </footer>
     </div>
     <script type="module" src="/src/main.js"></script>
+    <script src="/src/scripts/navbar.js"></script>
   </body>
 </html>
