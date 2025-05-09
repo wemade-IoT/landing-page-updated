@@ -1,7 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.addEventListener("scroll", () => {
-        const header = document.querySelector("header");
 
+    const header = document.querySelector("header");
+
+    if (window.scrollY > 0) {
+        header.classList.remove("transparent");
+    }
+
+    document.addEventListener("scroll", () => {
 
         if (window.scrollY === 0) {
             header.classList.add("transparent");
