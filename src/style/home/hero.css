@@ -24,8 +24,7 @@
 
 .hero__welcome {
   font-size: 1.1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
+  font-family: var(--font-primary);
   font-weight: 500;
   letter-spacing: 1px;
   color: var(--color-beige);
