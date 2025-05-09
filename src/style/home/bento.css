@@ -1,10 +1,9 @@
 #bento {
-  background-color: #fff;
-  padding: 1.8rem 0;
+  background-color: #f1f5f9;
+  padding: 4rem 0;
 }
 
 .bento__container {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
   gap: 2.2rem;

@@ -1,6 +1,6 @@
 .payments {
-  background-color: #fdf8ec;
-  padding: 60px 20px;
+  background-color: #f1f5f9;
+  padding: 2rem 0 4rem 0;
   font-family: 'Inter', sans-serif;
   display: flex;
   justify-content: center;
@@ -9,8 +9,7 @@
 
 .payments__content {
   display: flex;
-  width: 90%;
-  max-width: 1200px;
+  gap: 3rem;
 }
 
 .payments__image {
@@ -28,7 +27,6 @@
 
 .payments__details {
   flex: 3;
-  padding-left: 40px;
 }
 
 .payments__text {
@@ -49,22 +47,22 @@
   color: #2B2B2B;
   font-weight: bold;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .payments__description {
   font-size: 1rem;
   color: #000;
   text-align: left;
-  margin-left: 20px; /* Indentar las descripciones */
-  margin-bottom: 5px;
+  line-height: 1.65;
 }
 
 .payments__plans {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  align-items: stretch; 
+  align-items: stretch;
+  margin-top: 28px;
 }
 
 .plan {
@@ -121,7 +119,6 @@
 }
 
 .plan__features {
-  list-style: disc inside;
   padding: 0;
   margin: 15px 0;
   text-align: left;
@@ -131,6 +128,22 @@
   margin-bottom: 8px;
   font-size: 0.9rem;
   color: #555;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.plan__features li span {
+  line-height: 1.35;
+}
+
+.plan__circle {
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-green-dark);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  display: inline-block; 
 }
 
 .plan__button {
@@ -142,7 +155,7 @@
   cursor: pointer;
   font-size: 1rem;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .plan__button:hover {
