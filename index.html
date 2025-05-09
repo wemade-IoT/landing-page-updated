@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <title>Eco Guardian</title>
-  </head>
-  <body>
-    <div id="app">
-      <!----------- NAVBAR ------------->
-      <header style="border: 1px solid #000">
-        <h1>Eco Guardian</h1>
-      </header>
-      <main>
-        <!----------- HERO SECTION ------------->
-        <section id="hero">
-          <strong>H</strong>
-        </section>
-        <!----------- ABOUT US SECTION ------------->
-        <section id="about-us">
-          <strong>O</strong>
-        </section>
-        <!----------- BENTO GRID SECTION ------------->
-        <section id="bento">
-          <strong>T</strong>
-        </section>
-        <!----------- PAYMENTS SECTION ------------->
-        <section id="payments">
-          <strong>M</strong>
-        </section>
-        <!----------- ABOUT TEAM SECTION ------------->
-        <section id="about-team">
-          <strong>A</strong>
-        </section>
-        <!----------- CONTACT US SECTION ------------->
-        <section id="contact-us">
-          <strong>N</strong>
-        </section>
-      </main>
-      <!----------- FOOTER ------------->
-      <footer style="border: 1px solid #000">
-        <p>© 2023 Eco Guardian</p>
-        <p>All rights reserved.</p>
-      </footer>
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css" />
+  <title>Eco Guardian</title>
+</head>
+
+<body>
+  <div id="app">
+    <!----------- NAVBAR ------------->
+    <header style="border: 1px solid #000">
+      <h1>Eco Guardian</h1>
+    </header>
+    <main>
+      <!----------- HERO SECTION ------------->
+      <section id="hero">
+        <strong>H</strong>
+      </section>
+      <!----------- ABOUT US SECTION ------------->
+      <section id="about-us">
+        <strong>O</strong>
+      </section>
+      <!----------- BENTO GRID SECTION ------------->
+      <section id="bento">
+        <strong>T</strong>
+      </section>
+      <!-- PAYMENTS SECTION -->
+      <section class="payments">
+        <div class="payments__content">
+          <div class="payments__image">
+            <img src="/src/assets/images/img-cell.png" alt="Eco Guardian on devices" />
+          </div>
+          <div class="payments__details">
+            <div class="payments__text">
+              <h2 class="payments__title">In both desktop and mobile</h2>
+              <h3 class="payments__subtitle">What are you waiting for?</h3>
+              <p class="payments__description">Sign up and improve the quality of life in your garden</p>
+              <p class="payments__description">Select a payment plan depending on your needs</p>
+            </div>
+            <div class="payments__plans">
+              <div class="plan">
+                <h3 class="plan__title">Domestic</h3>
+                <p class="plan__price">$5.00 <span>/ month</span></p>
+                <ul class="plan__features">
+                  <li>Up to 5 plants to manage</li>
+                  <li>5 Expert Inquiries per week</li>
+                  <li>Access to our sensors</li>
+                  <li>Free installation for 3 plants</li>
+                  <li>Insights and Recommendations</li>
+                </ul>
+                <button class="plan__button">Sign Up ↗</button>
+              </div>
+              <div class="plan">
+                <h3 class="plan__title">Enterprise</h3>
+                <p class="plan__price">$250.00 <span>/ month</span></p>
+                <ul class="plan__features">
+                  <li>Up to 5 plants to manage</li>
+                  <li>5 Expert Inquiries per week</li>
+                  <li>Access to our sensors</li>
+                  <li>Free installation for 3 plants</li>
+                </ul>
+                <button class="plan__button">Sign Up ↗</button>
+              </div>
+              <div class="plan">
+                <h3 class="plan__title">Customized</h3>
+                <p class="plan__price">$10.00 <span>/ device</span></p>
+                <ul class="plan__features">
+                  <li>Get Access to all our sensors</li>
+                  <li>Access to actuator system</li>
+                  <li>Monthly payments with each sensor</li>
+                  <li>Unlimited plants</li>
+                </ul>
+                <button class="plan__button">Sign Up ↗</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------- ABOUT TEAM SECTION ------------->
+      <section id="about-team">
+        <strong>A</strong>
+      </section>
+      <!----------- CONTACT US SECTION ------------->
+      <section id="contact-us">
+        <strong>N</strong>
+      </section>
+    </main>
+    <!----------- FOOTER ------------->
+    <footer style="border: 1px solid #000">
+      <p>© 2023 Eco Guardian</p>
+      <p>All rights reserved.</p>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
