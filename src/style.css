@@ -44,14 +44,13 @@
 body {
   min-height: 100%;
   font-family: var(--font-primary);
-  position: relative;
+  z-index: 100;
 }
 
 #app {
   min-height: 100dvh;
-  display: grid;
-  grid-template-rows: 80px 1fr auto;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* this is a custom container for sections */
@@ -64,4 +63,8 @@ body {
 /* para testeo */
 .border {
   border: 1px solid red;
+}
+
+html{
+    scroll-behavior: smooth;
 }
