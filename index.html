@@ -15,25 +15,44 @@
       </header>
       <main>
         <!----------- HERO SECTION ------------->
-        <section id="hero">
-          <div class="container">
-            <div class="hero_content">
-              <div class="content_information">
-                <h6> Welcome to Ecoguardian</h6>
-                <h1> Innovation Care </h1>
-                <p> We take care of your plants future by innovating with technologies based on IoT giving you all the information you need. </p>
-                <button> 
-                  <p> Get Started</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </button>
-              </div>
-              <div class="content_image">
-                <img src="./src/assets/icons/farmer.png" alt="farmer" />
-              </div>
+        <section id="hero" class="hero">
+          <div class="hero__container container">
+            <div class="hero__content hero__content--left">
+              <span class="hero__welcome">Welcome to Ecoguardian</span>
+              <h1 class="hero__title">Innovation <span>&</span> Care</h1>
+              <p class="hero__description line-clamp-two">
+                We take care of your plants future by innovating with
+                technologies based on IoT giving you all the information you
+                need.
+              </p>
+              <button class="hero__button">
+                <span class="hero__button-text">Get Started</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="hero__button-icon"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
             </div>
+            <figure
+              class="hero__content hero__content--right"
+            >
+              <img
+                src="./src/assets/images/farmer2.png"
+                alt="farmer"
+                class="hero__image"
+              />
+            </figure>
           </div>
         </section>
         <!----------- ABOUT US SECTION ------------->
@@ -47,7 +66,10 @@
               <h2 class="bento__title">EcoGuardian Upcoming Cards & Events</h2>
               <div class="bento__content">
                 <p class="bento__description">
-                  This platform provides a smart IoT solution for plant care, offering insights and recommendations. It ensures optimal growth through monitoring, statistics, and expert advice tailored to your needs.
+                  This platform provides a smart IoT solution for plant care,
+                  offering insights and recommendations. It ensures optimal
+                  growth through monitoring, statistics, and expert advice
+                  tailored to your needs.
                 </p>
                 <div class="bento__button" role="button">
                   <span class="bento__button-text">View Gallery</span>
@@ -82,8 +104,10 @@
                     What <span>WeMade</span> for you
                   </h2>
                   <p class="bento__item-description line-clamp-two">
-                    With Ecoguardian you maintain a constant flow of information by taking use of our data gathering and processing system. 
-                    This ensures that your plants receive the best care possible.
+                    With Ecoguardian you maintain a constant flow of information
+                    by taking use of our data gathering and processing system.
+                    This ensures that your plants receive the best care
+                    possible.
                   </p>
                 </div>
               </a>
@@ -172,7 +196,8 @@
                     <span>Available</span> at all times
                   </h2>
                   <p class="bento__item-description line-clamp-one">
-                    Our team of experts will aid you in all your inquiries, ensuring you receive the best support.
+                    Our team of experts will aid you in all your inquiries,
+                    ensuring you receive the best support.
                   </p>
                 </div>
               </a>
@@ -184,106 +209,164 @@
           <strong>M</strong>
         </section>
         <!----------- ABOUT TEAM SECTION ------------->
-        <section id="about-team" class="about-team">
+        <section id="about-team" class="about-team" style="display: none;">
           <div class="about-team__overlay"></div>
           <div class="about-team__grid">
             <div class="about-team__card">
               <div class="divider"></div>
               <h2 class="about-team__title">
-                A group lead by <span class="highlight">Creativity</span> and <span class="highlight">Innovation</span>
+                A group lead by <span class="highlight">Creativity</span> and
+                <span class="highlight">Innovation</span>
               </h2>
               <div class="divider"></div>
               <p class="about-team__subtitle">
-                Our Startup WeMade was build upon the foundations of a better more technologically available future
+                Our Startup WeMade was build upon the foundations of a better
+                more technologically available future
               </p>
             </div>
             <div class="about-team__card">
               <div class="about-team__card-content">
-                <img src="/src/assets/images/about-team/team-members/Sebastian-Ramirez-Hoffmann.jpeg" alt="Sebastian Ramirez" class="about-team__image">
+                <img
+                  src="/src/assets/images/about-team/team-members/Sebastian-Ramirez-Hoffmann.jpeg"
+                  alt="Sebastian Ramirez"
+                  class="about-team__image"
+                />
                 <h3 class="about-team__name">Sebastian Ramirez</h3>
                 <p class="about-team__position-subtitle">Team Leader</p>
                 <div class="about-team__spacer"></div>
                 <p class="about-team__role">Full Stack Dev</p>
                 <div class="divider"></div>
-                <a href="https://github.com/SEBRH" class="about-team__link" target="_blank">
+                <a
+                  href="https://github.com/SEBRH"
+                  class="about-team__link"
+                  target="_blank"
+                >
                   GitHub <span class="redirect-icon">↗</span>
                 </a>
               </div>
             </div>
             <div class="about-team__card">
               <div class="about-team__card-content">
-                <img src="/src/assets/images/about-team/team-members/Gustavo-Huilca-Chipana.png" alt=">Gustavo Huilca" class="about-team__image">
+                <img
+                  src="/src/assets/images/about-team/team-members/Gustavo-Huilca-Chipana.png"
+                  alt=">Gustavo Huilca"
+                  class="about-team__image"
+                />
                 <h3 class="about-team__name">Gustavo Huilca</h3>
                 <p class="about-team__position-subtitle">Team Member</p>
                 <div class="about-team__spacer"></div>
                 <p class="about-team__role">Full Stack Dev</p>
                 <div class="divider"></div>
-                <a href="https://github.com/GustavoHuilca31" class="about-team__link" target="_blank">
+                <a
+                  href="https://github.com/GustavoHuilca31"
+                  class="about-team__link"
+                  target="_blank"
+                >
                   GitHub <span class="redirect-icon">↗</span>
                 </a>
               </div>
             </div>
             <div class="about-team__card">
               <div class="about-team__card-content">
-                <img src="/src/assets/images/about-team/team-members/Nicolas-Esteban-Garcia.jpg" alt="Nicolas Esteban" class="about-team__image">
+                <img
+                  src="/src/assets/images/about-team/team-members/Nicolas-Esteban-Garcia.jpg"
+                  alt="Nicolas Esteban"
+                  class="about-team__image"
+                />
                 <h3 class="about-team__name">Nicolas Esteban</h3>
                 <p class="about-team__position-subtitle">Team Member</p>
                 <div class="about-team__spacer"></div>
                 <p class="about-team__role">Full Stack Dev</p>
                 <div class="divider"></div>
-                <a href="https://github.com/Nekolas777" class="about-team__link" target="_blank">
+                <a
+                  href="https://github.com/Nekolas777"
+                  class="about-team__link"
+                  target="_blank"
+                >
                   GitHub <span class="redirect-icon">↗</span>
                 </a>
               </div>
             </div>
             <div class="about-team__card">
               <div class="about-team__card-content">
-                <img src="/src/assets/images/about-team/team-members/Italo-Luna-Capunay.webp" alt="Italo Luna" class="about-team__image">
+                <img
+                  src="/src/assets/images/about-team/team-members/Italo-Luna-Capunay.webp"
+                  alt="Italo Luna"
+                  class="about-team__image"
+                />
                 <h3 class="about-team__name">Italo Luna</h3>
                 <p class="about-team__position-subtitle">Team Member</p>
                 <div class="about-team__spacer"></div>
                 <p class="about-team__role">Full Stack Dev</p>
                 <div class="divider"></div>
-                <a href="https://github.com/tatoft" class="about-team__link" target="_blank">
+                <a
+                  href="https://github.com/tatoft"
+                  class="about-team__link"
+                  target="_blank"
+                >
                   GitHub <span class="redirect-icon">↗</span>
                 </a>
               </div>
             </div>
             <div class="about-team__card">
               <div class="about-team__card-content">
-                <img src="/src/assets/images/about-team/team-members/Manuel-Peña-Rivera.jpg" alt="Manuel Peña" class="about-team__image">
+                <img
+                  src="/src/assets/images/about-team/team-members/Manuel-Peña-Rivera.jpg"
+                  alt="Manuel Peña"
+                  class="about-team__image"
+                />
                 <h3 class="about-team__name">Manuel Peña</h3>
                 <p class="about-team__position-subtitle">Team Member</p>
                 <div class="about-team__spacer"></div>
                 <p class="about-team__role">Full Stack Dev</p>
                 <div class="divider"></div>
-                <a href="https://github.com/U202210138" class="about-team__link" target="_blank">
+                <a
+                  href="https://github.com/U202210138"
+                  class="about-team__link"
+                  target="_blank"
+                >
                   GitHub <span class="redirect-icon">↗</span>
                 </a>
               </div>
             </div>
             <div class="about-team__card">
               <div class="about-team__card-content">
-                <img src="/src/assets/images/about-team/team-members/Mathias-Jave-Diaz.png" alt="Mathias Jave" class="about-team__image">
+                <img
+                  src="/src/assets/images/about-team/team-members/Mathias-Jave-Diaz.png"
+                  alt="Mathias Jave"
+                  class="about-team__image"
+                />
                 <h3 class="about-team__name">Mathias Jave</h3>
                 <p class="about-team__position-subtitle">Team Member</p>
                 <div class="about-team__spacer"></div>
                 <p class="about-team__role">Full Stack Dev</p>
                 <div class="divider"></div>
-                <a href="https://github.com/LordMathi2741" class="about-team__link" target="_blank">
+                <a
+                  href="https://github.com/LordMathi2741"
+                  class="about-team__link"
+                  target="_blank"
+                >
                   GitHub <span class="redirect-icon">↗</span>
                 </a>
               </div>
             </div>
             <div class="about-team__card">
               <div class="about-team__card-content">
-                <img src="/src/assets/images/about-team/team-members/Mathias-Kunimoto.png" alt="Mathias Kunimoto" class="about-team__image">
+                <img
+                  src="/src/assets/images/about-team/team-members/Mathias-Kunimoto.png"
+                  alt="Mathias Kunimoto"
+                  class="about-team__image"
+                />
                 <h3 class="about-team__name">Mathias Kunimoto</h3>
                 <p class="about-team__position-subtitle">Team Member</p>
                 <div class="about-team__spacer"></div>
                 <p class="about-team__role">Full Stack Dev</p>
                 <div class="divider"></div>
-                <a href="https://github.com/kuni2005" class="about-team__link" target="_blank">
+                <a
+                  href="https://github.com/kuni2005"
+                  class="about-team__link"
+                  target="_blank"
+                >
                   GitHub <span class="redirect-icon">↗</span>
                 </a>
               </div>
@@ -405,31 +488,71 @@
         </section>
       </main>
       <!----------- FOOTER ------------->
-      <footer class="footer">
+      <footer class="footer" style="display: none;">
         <div class="container footer__container">
           <!-- Logo and Social Media Icons -->
           <div class="footer__brand-column">
             <div class="footer__logo-wrapper">
-              <img src="/public/logo.svg" alt="EcoGuardian Logo" class="footer__logo">
+              <img
+                src="/public/logo.svg"
+                alt="EcoGuardian Logo"
+                class="footer__logo"
+              />
               <div class="footer__brand-text">
                 <h2 class="footer__brand-name">EcoGuardian</h2>
                 <p class="footer__tagline">Nurturing your future</p>
               </div>
             </div>
             <div class="footer__social-icons">
-              <a href="https://avatars.githubusercontent.com/u/207313682?s=400&u=2d49dcb274216345f5bd20f7b0d70f94b93698eb&v=4" target="_blank" class="footer__social-link" aria-label="Twitter">
-                <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              <a
+                href="https://avatars.githubusercontent.com/u/207313682?s=400&u=2d49dcb274216345f5bd20f7b0d70f94b93698eb&v=4"
+                target="_blank"
+                class="footer__social-link"
+                aria-label="Twitter"
+              >
+                <svg
+                  class="footer__social-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
                 </svg>
               </a>
-              <a href="https://www.instagram.com/piter_gc/" target="_blank" class="footer__social-link" aria-label="Instagram">
-                <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              <a
+                href="https://www.instagram.com/piter_gc/"
+                target="_blank"
+                class="footer__social-link"
+                aria-label="Instagram"
+              >
+                <svg
+                  class="footer__social-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                  />
                 </svg>
               </a>
-              <a href="https://www.linkedin.com/in/samira-jaa/" target="_blank" class="footer__social-link" aria-label="LinkedIn">
-                <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              <a
+                href="https://www.linkedin.com/in/samira-jaa/"
+                target="_blank"
+                class="footer__social-link"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  class="footer__social-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                  />
                 </svg>
               </a>
             </div>
@@ -444,13 +567,17 @@
                   <a href="#hero" class="footer__menu-link">Home</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#about-us" class="footer__menu-link">About EcoGuardian</a>
+                  <a href="#about-us" class="footer__menu-link"
+                    >About EcoGuardian</a
+                  >
                 </li>
                 <li class="footer__menu-item">
                   <a href="#bento" class="footer__menu-link">Benefits</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#about-team" class="footer__menu-link">About the team</a>
+                  <a href="#about-team" class="footer__menu-link"
+                    >About the team</a
+                  >
                 </li>
                 <li class="footer__menu-item">
                   <a href="#payments" class="footer__menu-link">Pricing</a>
@@ -461,28 +588,54 @@
               </ul>
             </nav>
           </div>
-          
+
           <!-- Contact Us -->
           <div class="footer__contact-column">
             <h3 class="footer__heading">Contact us</h3>
             <div class="footer__contact-info">
               <a href="mailto:we.made@gmail.com" class="footer__contact-link">
-                <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                <svg
+                  class="footer__contact-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  />
                 </svg>
                 we.made@gmail.com
               </a>
               <a href="tel:+51946547814" class="footer__contact-link">
-                <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                <svg
+                  class="footer__contact-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  />
                 </svg>
                 +51 946 547 814
               </a>
               <div class="footer__subscribe">
-                <input type="email" placeholder="neko@gmail.com" class="footer__input">
+                <input
+                  type="email"
+                  placeholder="neko@gmail.com"
+                  class="footer__input"
+                />
                 <button type="submit" class="footer__button">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                    />
                   </svg>
                 </button>
               </div>
@@ -494,5 +647,3 @@
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
-
-
