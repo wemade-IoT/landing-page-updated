@@ -1,1 +1,2 @@
-console.log('sexo');
+import './scripts/photoswipe';
+import './scripts/navbar.js'
