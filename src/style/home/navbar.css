@@ -1,6 +1,5 @@
 header {
   display: flex;
-  /* border: 1px solid red; */
   flex-direction: row;
   background-color: var(--color-beige);
   justify-content: space-between;
@@ -141,8 +140,6 @@ header.transparent * {
 #sidenav__button {
   display: none;
 }
-
-/* Media Queries */
 
 @media (max-width: 768px) {
   .navbar {

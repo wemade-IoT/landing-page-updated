@@ -1,7 +1,9 @@
 const header = document.querySelector("header");
-const overlay = document.querySelector('#overlay')
-const closeBtn = document.querySelector('.closebtn')
-const sidenavBtn = document.querySelector('#sidenav__button')
+const overlay = document.querySelector("#overlay");
+const closeBtn = document.querySelector(".closebtn");
+const sidenavBtn = document.querySelector("#sidenav__button");
+const arrow = document.querySelector(".dropdown__label-container img");
+const label = document.querySelector(".dropdown__label");
 
 if (window.scrollY > 0) {
   header.classList.remove("transparent");
@@ -10,10 +12,14 @@ if (window.scrollY > 0) {
 document.addEventListener("scroll", () => {
   if (window.scrollY === 0) {
     header.classList.add("transparent");
+    arrow.src = "/arrow.svg";
+    label.style.color = "white";
 
     // Agrega transparencia cuando el scroll está en 0
   } else {
     header.classList.remove("transparent"); // Elimina transparencia al hacer scroll
+    arrow.src = "/arrow-alpha.svg";
+    label.style.color = "black";
   }
 });
 
@@ -33,6 +39,6 @@ function closeNav() {
   }, 500);
 }
 
-overlay.addEventListener("click", closeNav)
-closeBtn.addEventListener("click", closeNav)
-sidenavBtn.addEventListener("click", openNav)
+overlay.addEventListener("click", closeNav);
+closeBtn.addEventListener("click", closeNav);
+sidenavBtn.addEventListener("click", openNav);
