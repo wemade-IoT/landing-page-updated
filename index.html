@@ -689,6 +689,7 @@
                   type="email"
                   name="email"
                   placeholder="example@domain.com"
+                  id="email-input-text"
                 />
               </div>
               <div class="contact__form-field">
@@ -700,7 +701,8 @@
                   class="contact__form-field-input"
                   type="number"
                   name="phone"
-                  placeholder="946 547 814"
+                  placeholder="946 547 814",
+                  id="phone-number-input-text"
                 />
               </div>
               <div class="contact__form-field">
@@ -711,9 +713,12 @@
                   class="contact__form-field-textarea"
                   name="skills"
                   placeholder="Tell us about your expertise in IoT, automation, or plant care..."
+                  id="skills-text-area"
                 ></textarea>
               </div>
               <button
+                id="submit-button"
+                type="button"
                 class="contact__form-button"
                 style="
                   font-family: system-ui, -apple-system, BlinkMacSystemFont,
@@ -884,6 +889,6 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
