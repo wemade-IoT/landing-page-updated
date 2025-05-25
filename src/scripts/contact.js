@@ -1,4 +1,4 @@
-import SmtpHelper from "../utils/stmp-helper.js";
+import { SmtpHelper } from '../utils/stmp-helper.js';
 
 const phoneNumberInputText = document.getElementById('phone-number-input-text');
 const emailInputText = document.getElementById('email-input-text');
