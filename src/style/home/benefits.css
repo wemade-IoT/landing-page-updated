@@ -20,7 +20,7 @@
 
 .benefits__subtitle {
   font-size: 1.15rem;
-  color: #64748b;
+  color: #a3a3a3;
   margin-bottom: 3rem;
   font-weight: 400;
 }
@@ -57,13 +57,13 @@
 .benefit__name {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #3D90D7;
+  color: #578257;
   margin-bottom: 0.6rem;
 }
 
 .benefit__desc {
   font-size: 1rem;
-  color: #475569;
+  color: #47694c;
   line-height: 1.5;
   margin: 0;
 }

@@ -141,7 +141,7 @@ header.transparent * {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .navbar {
     display: none;
   }
@@ -157,5 +157,9 @@ header.transparent * {
 
   #sidenav__button {
     display: block;
+  }
+
+  .dropdown {
+    display: none !important;
   }
 }
