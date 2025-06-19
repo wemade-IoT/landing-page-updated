@@ -151,3 +151,37 @@
     justify-content: center;
   }
 }
+
+.about-team__video-section {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.about-team__video-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(135deg, var(--color-green-light) 0%, var(--color-green-dark) 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(164, 211, 154, 0.3);
+}
+
+.about-team__video-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(164, 211, 154, 0.4);
+}
+
+.video-icon {
+  transition: transform 0.3s ease;
+}
+
+.about-team__video-btn:hover .video-icon {
+  transform: scale(1.1);
+}
