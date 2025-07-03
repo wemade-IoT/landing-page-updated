@@ -12,13 +12,13 @@ if (window.scrollY > 0) {
 document.addEventListener("scroll", () => {
   if (window.scrollY === 0) {
     header.classList.add("transparent");
-    arrow.src = "/arrow.svg";
+    arrow.src = "/icons/arrow.svg";
     label.style.color = "white";
 
     // Agrega transparencia cuando el scroll está en 0
   } else {
     header.classList.remove("transparent"); // Elimina transparencia al hacer scroll
-    arrow.src = "/arrow-alpha.svg";
+    arrow.src = "/icons/arrow-alpha.svg";
     label.style.color = "black";
   }
 });
