@@ -1,6 +1,6 @@
 ## 🏁 Getting Started <a name="getting_started"></a>
 
-Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local.
+Sigue estos pasos para ver y modificar el proyecto en tu entorno local.
 
 ---
 
@@ -17,48 +17,31 @@ cd landing-page-iot
 
 ---
 
-### 2️⃣ Instalar dependencias
-Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu sistema. Luego, instala las dependencias del proyecto ejecutando:
+### 2️⃣ Visualizar el proyecto  
+El proyecto se compone de archivos estáticos (HTML, CSS y JavaScript). Para verlo localmente puedes:
 
-```bash
-npm install
-```
+- **Abrir directamente el archivo HTML:**  
+  Haz doble clic en `index.html` y se abrirá en tu navegador.  
+  *Nota:* Algunas funcionalidades, como la carga de módulos ES, pueden no funcionar correctamente usando el protocolo `file://`.
 
----
-
-### 3️⃣ Configurar variables de entorno (opcional)
-Si el proyecto requiere variables de entorno, crea un archivo `.env` en la raíz del proyecto y configura las variables necesarias. Consulta el archivo `.env.example` si está disponible.
-
----
-
-### 4️⃣ Iniciar el servidor de desarrollo
-Ejecuta el siguiente comando para iniciar el servidor de desarrollo:
-
-```bash
-npm run dev
-```
-
-El servidor estará disponible en tu navegador en la dirección predeterminada, generalmente:
-
-```
-http://localhost:3000
-```
+- **Utilizar un servidor local:**  
+  Se recomienda usar un servidor local para evitar problemas con la carga de módulos ES.  
+  Si usas [Visual Studio Code](https://code.visualstudio.com/), instala la extensión **Live Server** y haz clic en "Go Live" para iniciar el servidor local.
 
 ---
 
-### 5️⃣ Construir para producción (opcional)
-Si deseas generar una versión optimizada para producción, ejecuta:
-
-```bash
-npm run build
-```
-
-Los archivos optimizados estarán disponibles en la carpeta `dist` o equivalente.
+### 3️⃣ Editar y Personalizar  
+Realiza cualquier modificación directamente en los archivos HTML, CSS y JavaScript. No es necesario ningún proceso adicional de compilación.
 
 ---
 
-### Requisitos previos
-- **Node.js**: Asegúrate de tener instalada la versión recomendada de Node.js.
-- **Git**: Necesario para clonar el repositorio.
+### 4️⃣ Desplegar  
+Para desplegar el proyecto, sube el contenido completo del directorio a tu servicio de hosting de archivos estáticos o servidor web.
+
+---
+
+### Requisitos previos  
+- **Editor de código:** Se recomienda [Visual Studio Code](https://code.visualstudio.com/) u otro editor similar.
+- **Servidor local (opcional):** Herramientas como **Live Server** te ayudarán a evitar restricciones al cargar módulos ES.
 
 Para más información, consulta la [documentación oficial](https://github.com/wemade-IoT/landing-page).
