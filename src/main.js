@@ -5,6 +5,42 @@ import './scripts/contact.js'
 import './scripts/video.js'
 import './scripts/bento.js'
 
+// Add professional style for language switcher buttons
+const langSwitcherStyle = document.createElement('style');
+langSwitcherStyle.textContent = `
+#lang-switcher button {
+  background: transparent;
+  border: 1px solid #a4d39a;
+  color: #3b2c17;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.3em 1em;
+  margin: 0 2px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+#lang-switcher button.active, #lang-switcher button:focus {
+  background: #a4d39a;
+  color: #fff;
+  border: 1px solid #578257;
+  outline: none;
+}
+#lang-switcher button:hover {
+  background: #d6e899;
+  color: #3b2c17;
+}
+`;
+document.head.appendChild(langSwitcherStyle);
+
+function updateLangSwitcherActive(lang) {
+  const enBtn = document.getElementById('lang-en');
+  const esBtn = document.getElementById('lang-es');
+  if (enBtn && esBtn) {
+    enBtn.classList.toggle('active', lang === 'en');
+    esBtn.classList.toggle('active', lang === 'es');
+  }
+}
+
 // --- Language Switcher ---
 const translations = {
   en: {
@@ -191,6 +227,7 @@ function setLanguage(lang) {
       }
     }
   });
+  updateLangSwitcherActive(lang);
 }
 
 function getLanguage() {
@@ -200,6 +237,7 @@ function getLanguage() {
 document.addEventListener('DOMContentLoaded', () => {
   const lang = getLanguage();
   setLanguage(lang);
+  updateLangSwitcherActive(lang);
   const enBtn = document.getElementById('lang-en');
   const esBtn = document.getElementById('lang-es');
   if (enBtn && esBtn) {
