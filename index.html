@@ -19,18 +19,13 @@
 
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn">&times;</a>
-        <a href="#hero">Home</a>
-        <a href="#about-us">Eco Guardian</a>
-        <a href="#bento">Benefits</a>
-        <a href="#payments">Pricing</a>
-        <a href="#about-team">About Us</a>
-        <a href="#work">Work with us</a>
-        <a
-          href="#"
-          id="nav__button"
-          style="display: inline-block; width: 10rem; margin-left: 1rem"
-          >Get Started</a
-        >
+        <a href="#hero" data-i18n="navHome">Home</a>
+        <a href="#about-us" data-i18n="navEco">Eco Guardian</a>
+        <a href="#bento" data-i18n="navBenefits">Benefits</a>
+        <a href="#payments" data-i18n="navPricing">Pricing</a>
+        <a href="#about-team" data-i18n="navAbout">About Us</a>
+        <a href="#work" data-i18n="navWorkWithUs">Work with us</a>
+        <a href="#" id="nav__button" style="display: inline-block; width: 10rem; margin-left: 1rem" data-i18n="getStarted">Get Started</a>
       </div>
 
       <!----------- NAVBAR ------------->
@@ -52,8 +47,16 @@
                   justify-content: center;
                 "
               >
-                <h1 style="font-size: 1.3rem; transition: 0.5s">EcoGuardian</h1>
-                <p style="font-size: 0.9rem; transition: 0.5s">
+                <h1
+                  style="font-size: 1.3rem; transition: 0.5s"
+                  data-i18n="brand"
+                >
+                  EcoGuardian
+                </h1>
+                <p
+                  style="font-size: 0.9rem; transition: 0.5s"
+                  data-i18n="brandTag"
+                >
                   Nurturing your future
                 </p>
               </div>
@@ -61,38 +64,18 @@
           </a>
           <nav class="navbar">
             <ul>
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#about-us">Eco Guardian</a></li>
-              <li><a href="#bento">Benefits</a></li>
-              <li><a href="#payments">Pricing</a></li>
-              <li><a href="#about-team">About Us</a></li>
-              <li><a href="#work">Work</a></li>
+              <li><a href="#hero" data-i18n="navHome">Home</a></li>
+              <li><a href="#about-us" data-i18n="navEco">Eco Guardian</a></li>
+              <li><a href="#bento" data-i18n="navBenefits">Benefits</a></li>
+              <li><a href="#payments" data-i18n="navPricing">Pricing</a></li>
+              <li><a href="#about-team" data-i18n="navAbout">About Us</a></li>
+              <li><a href="#work" data-i18n="navWork">Work</a></li>
             </ul>
           </nav>
-          <div class="dropdown">
-            <div class="dropdown__trigger">
-              <div class="dropdown__icon">
-                <img src="./src/assets/icons/us.svg" alt="flag" />
-              </div>
-              <div class="dropdown__label-container">
-                <label class="dropdown__label">English</label>
-                <img src="/icons/arrow.svg" alt="flag" />
-              </div>
-            </div>
-            <div class="dropdown__menu">
-              <div class="dropdown__item">
-                <div class="dropdown__item-icon">
-                  <ESFlagIcon />
-                </div>
-                <label class="dropdown__item-label">Spanish</label>
-              </div>
-              <div class="dropdown__item">
-                <div class="dropdown__item-icon">
-                  <UKFlagIcon />
-                </div>
-                <label class="dropdown__item-label">English</label>
-              </div>
-            </div>
+          <!-- Language Switcher -->
+          <div id="lang-switcher" style="display:inline-block; margin-right:1rem;">
+            <button id="lang-en" type="button">EN</button> |
+            <button id="lang-es" type="button">ES</button>
           </div>
           <span id="sidenav__button" style="font-size: 30px; cursor: pointer"
             >&#9776;</span
@@ -104,20 +87,13 @@
         <section id="hero" class="hero">
           <div class="hero__container container">
             <div class="hero__content hero__content--left">
-              <span class="hero__welcome">Welcome to Ecoguardian</span>
-              <h1 class="hero__title">Innovation <span>&</span> Care</h1>
-              <p class="hero__description line-clamp-two">
-                We take care of your plants future by innovating with
-                technologies based on IoT giving you all the information you
-                need.
+              <span class="hero__welcome" data-i18n="heroWelcome">Welcome to Ecoguardian</span>
+              <h1 class="hero__title"><span data-i18n="heroTitle1">Innovation</span> <span>&</span> <span data-i18n="heroTitle2">Care</span></h1>
+              <p class="hero__description line-clamp-two" data-i18n="heroDesc">
+                We take care of your plants future by innovating with technologies based on IoT giving you all the information you need.
               </p>
-              <a
-                role="button"
-                href="https://ecoguardian-tb2.vercel.app/"
-                target="_blank"
-                class="hero__button"
-              >
-                <span class="hero__button-text">Get Started</span>
+              <a role="button" href="https://ecoguardian-tb2.vercel.app/" target="_blank" class="hero__button">
+                <span class="hero__button-text" data-i18n="getStarted">Get Started</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -163,28 +139,17 @@
               </div>
             </div>
             <div class="about-us-right">
-              <p class="experience">+1 Year of Experience</p>
-              <h1 class="title">High end Tecnologies & usefull analytics</h1>
+              <p class="experience" data-i18n="aboutExp">+1 Year of Experience</p>
+              <h1 class="title" data-i18n="aboutTitle">High end Tecnologies & usefull analytics</h1>
               <div class="description-block">
-                <p class="description-bold">
-                  With over 200 experts giving you all the advices you need
-                </p>
-                <p class="description">
-                  Monitor and analyze your plants and plantations data by using
-                  our sensors and services focused on increasing the performance
-                  and well being of your plants.
-                </p>
+                <p class="description-bold" data-i18n="aboutBold">With over 200 experts giving you all the advices you need</p>
+                <p class="description" data-i18n="aboutDesc">Monitor and analyze your plants and plantations data by using our sensors and services focused on increasing the performance and well being of your plants.</p>
               </div>
               <ul class="list">
-                <li>
-                  If you need to monitor the state of your plant or plantation
-                </li>
-                <li>
-                  Farmers and enthusiasts all over the globe are using this kind
-                  of technology
-                </li>
+                <li data-i18n="aboutList1">If you need to monitor the state of your plant or plantation</li>
+                <li data-i18n="aboutList2">Farmers and enthusiasts all over the globe are using this kind of technology</li>
               </ul>
-              <a href="#" class="cta">Find out more ↗</a>
+              <a href="#" class="cta" data-i18n="aboutCta">Find out more ↗</a>
             </div>
           </div>
         </section>
@@ -192,16 +157,9 @@
         <section id="bento">
           <div class="bento__container container">
             <div class="bento__information">
-              <h2 class="bento__title">
-                Benefits focused on what you need and deserve today
-              </h2>
+              <h2 class="bento__title" data-i18n="bentoTitle">Benefits focused on what you need and deserve today</h2>
               <div class="bento__content">
-                <p class="bento__description">
-                  This platform provides a smart IoT solution for plant care,
-                  offering insights and recommendations. It ensures optimal
-                  growth through monitoring, statistics, and expert advice
-                  tailored to your needs.
-                </p>
+                <p class="bento__description" data-i18n="bentoDesc">This platform provides a smart IoT solution for plant care, offering insights and recommendations. It ensures optimal growth through monitoring, statistics, and expert advice tailored to your needs.</p>
                 <div
                   class="bento__button-group"
                   style="display: flex; gap: 24px"
@@ -210,7 +168,7 @@
                     class="bento__button bento__button--gallery"
                     role="button"
                   >
-                    <span class="bento__button-text">View Gallery</span>
+                    <span class="bento__button-text" data-i18n="bentoGallery">View Gallery</span>
                     <svg
                       class="bento__button-icon"
                       xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +183,7 @@
                     class="bento__button bento__button--domestic"
                     role="button"
                   >
-                    <span class="bento__button-text">Sector doméstico</span>
+                    <span class="bento__button-text" data-i18n="bentoDomestic">Sector doméstico</span>
                     <svg
                       class="bento__button-icon-domestic"
                       fill="#3D90D7"
@@ -255,15 +213,8 @@
                   alt=""
                 />
                 <div class="bento__item-content">
-                  <h2 class="bento__item-title">
-                    What <span>WeMade</span> for you
-                  </h2>
-                  <p class="bento__item-description line-clamp-two">
-                    With Ecoguardian you maintain a constant flow of information
-                    by taking use of our data gathering and processing system.
-                    This ensures that your plants receive the best care
-                    possible.
-                  </p>
+                  <h2 class="bento__item-title"><span data-i18n="bentoItem0Title1">What</span> <span>WeMade</span> <span data-i18n="bentoItem0Title2">for you</span></h2>
+                  <p class="bento__item-description line-clamp-two" data-i18n="bentoItem0Desc">With Ecoguardian you maintain a constant flow of information by taking use of our data gathering and processing system. This ensures that your plants receive the best care possible.</p>
                 </div>
               </a>
               <a
@@ -280,12 +231,8 @@
                   alt=""
                 />
                 <div class="bento__item-content">
-                  <h2 class="bento__item-title">
-                    Made for <span>Everyone</span>
-                  </h2>
-                  <p class="bento__item-description line-clamp-one">
-                    A lighter version for plant care enthusiasts.
-                  </p>
+                  <h2 class="bento__item-title" data-i18n="bentoItem1Title">Made for <span>Everyone</span></h2>
+                  <p class="bento__item-description line-clamp-one" data-i18n="bentoItem1Desc">A lighter version for plant care enthusiasts.</p>
                 </div>
               </a>
               <a
@@ -302,12 +249,8 @@
                   alt=""
                 />
                 <div class="bento__item-content">
-                  <h2 class="bento__item-title">
-                    <span>Easy</span> & <span>Effective</span>
-                  </h2>
-                  <p class="bento__item-description line-clamp-one">
-                    With our IoT system and interactive interface
-                  </p>
+                  <h2 class="bento__item-title"><span data-i18n="bentoItem2Title1">Easy</span> & <span data-i18n="bentoItem2Title2">Effective</span></h2>
+                  <p class="bento__item-description line-clamp-one" data-i18n="bentoItem2Desc">With our IoT system and interactive interface</p>
                 </div>
               </a>
               <a
@@ -324,13 +267,8 @@
                   alt=""
                 />
                 <div class="bento__item-content">
-                  <h2 class="bento__item-title">
-                    <span>Manage</span> &
-                    <span>Gain Feedback</span>
-                  </h2>
-                  <p class="bento__item-description line-clamp-one">
-                    With access to all the plant’s analytics
-                  </p>
+                  <h2 class="bento__item-title"><span data-i18n="bentoItem3Title1">Manage</span> & <span data-i18n="bentoItem3Title2">Gain Feedback</span></h2>
+                  <p class="bento__item-description line-clamp-one" data-i18n="bentoItem3Desc">With access to all the plant’s analytics</p>
                 </div>
               </a>
               <a
@@ -347,13 +285,8 @@
                   alt=""
                 />
                 <div class="bento__item-content">
-                  <h2 class="bento__item-title">
-                    <span>Available</span> at all times
-                  </h2>
-                  <p class="bento__item-description line-clamp-one">
-                    Our team of experts will aid you in all your inquiries,
-                    ensuring you receive the best support.
-                  </p>
+                  <h2 class="bento__item-title"><span data-i18n="bentoItem4Title">Available at all times</span></h2>
+                  <p class="bento__item-description line-clamp-one" data-i18n="bentoItem4Desc">Our team of experts will aid you in all your inquiries, ensuring you receive the best support.</p>
                 </div>
               </a>
             </div>
@@ -370,96 +303,45 @@
             </div>
             <div class="payments__details">
               <div class="payments__text">
-                <h2 class="payments__title">In both desktop and mobile</h2>
-                <h3 class="payments__subtitle">What are you waiting for?</h3>
-                <p class="payments__description">
-                  Sign up and improve the quality of life in your garden
-                </p>
-                <p class="payments__description">
-                  Select a payment plan depending on your needs
-                </p>
+                <h2 class="payments__title" data-i18n="paymentsTitle">In both desktop and mobile</h2>
+                <h3 class="payments__subtitle" data-i18n="paymentsSubtitle">What are you waiting for?</h3>
+                <p class="payments__description" data-i18n="paymentsDesc1">Sign up and improve the quality of life in your garden</p>
+                <p class="payments__description" data-i18n="paymentsDesc2">Select a payment plan depending on your needs</p>
               </div>
               <div class="payments__plans">
                 <div class="plan">
-                  <h3 class="plan__title">Domestic</h3>
-                  <p class="plan__price">$5.00 <span>/ month</span></p>
+                  <h3 class="plan__title" data-i18n="planDomestic">Domestic</h3>
+                  <p class="plan__price">$5.00 <span data-i18n="planMonth">/ month</span></p>
                   <ul class="plan__features">
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>Up to 5 plants to manage</span>
-                    </li>
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>5 Expert Inquiries per week</span>
-                    </li>
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>Access to our sensors</span>
-                    </li>
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>Free installation for 3 plants</span>
-                    </li>
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>Insights and Recommendations</span>
-                    </li>
+                    <li><span data-i18n="planFeat1">Up to 5 plants to manage</span></li>
+                    <li><span data-i18n="planFeat2">5 Expert Inquiries per week</span></li>
+                    <li><span data-i18n="planFeat3">Access to our sensors</span></li>
+                    <li><span data-i18n="planFeat4">Free installation for 3 plants</span></li>
+                    <li><span data-i18n="planFeat5">Insights and Recommendations</span></li>
                   </ul>
-                  <button class="plan__button">Buy now ↗</button>
+                  <button class="plan__button" data-i18n="buyNow">Buy now ↗</button>
                 </div>
                 <div class="plan">
-                  <h3 class="plan__title">Enterprise</h3>
-                  <p class="plan__price">$250.00 <span>/ month</span></p>
+                  <h3 class="plan__title" data-i18n="planEnterprise">Enterprise</h3>
+                  <p class="plan__price">$250.00 <span data-i18n="planMonth">/ month</span></p>
                   <ul class="plan__features">
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>Up to 5 plants to manage</span>
-                    </li>
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>5 Expert Inquiries per week</span>
-                    </li>
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>Access to our sensors</span>
-                    </li>
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>Free installation for 3 plants</span>
-                    </li>
-                    <li style="visibility: hidden">
-                      <div class="plan__circle"></div>
-                      <span>Free installation for 3 ese peña no trabaja</span>
-                    </li>
+                    <li><span data-i18n="planFeat1">Up to 5 plants to manage</span></li>
+                    <li><span data-i18n="planFeat2">5 Expert Inquiries per week</span></li>
+                    <li><span data-i18n="planFeat3">Access to our sensors</span></li>
+                    <li><span data-i18n="planFeat4">Free installation for 3 plants</span></li>
                   </ul>
-                  <button class="plan__button">Buy now ↗</button>
+                  <button class="plan__button" data-i18n="buyNow">Buy now ↗</button>
                 </div>
                 <div class="plan">
-                  <h3 class="plan__title">Customized</h3>
-                  <p class="plan__price">$10.00 <span>/ device</span></p>
+                  <h3 class="plan__title" data-i18n="planCustomized">Customized</h3>
+                  <p class="plan__price">$10.00 <span data-i18n="planDevice">/ device</span></p>
                   <ul class="plan__features">
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>Get Access to all our sensors</span>
-                    </li>
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>Access to actuator system</span>
-                    </li>
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>Monthly payments with each sensor</span>
-                    </li>
-                    <li>
-                      <div class="plan__circle"></div>
-                      <span>Unlimited plants</span>
-                    </li>
-                    <li style="visibility: hidden">
-                      <div class="plan__circle"></div>
-                      <span>Free installation for 3 plants</span>
-                    </li>
+                    <li><span data-i18n="planFeat6">Get Access to all our sensors</span></li>
+                    <li><span data-i18n="planFeat7">Access to actuator system</span></li>
+                    <li><span data-i18n="planFeat8">Monthly payments with each sensor</span></li>
+                    <li><span data-i18n="planFeat9">Unlimited plants</span></li>
                   </ul>
-                  <button class="plan__button">Buy now ↗</button>
+                  <button class="plan__button" data-i18n="buyNow">Buy now ↗</button>
                 </div>
               </div>
             </div>
@@ -471,29 +353,11 @@
           <div class="about-team__grid">
             <div class="about-team__card">
               <div class="divider"></div>
-              <h2 class="about-team__title">
-                A group lead by <span class="highlight">Creativity</span> and
-                <span class="highlight">Innovation</span>
-              </h2>
+              <h2 class="about-team__title" data-i18n="teamTitle">A group lead by <span class="highlight">Creativity</span> and <span class="highlight">Innovation</span></h2>
               <div class="divider"></div>
-              <p class="about-team__subtitle">
-                Our Startup WeMade was build upon the foundations of a better
-                more technologically available
-              </p>
+              <p class="about-team__subtitle" data-i18n="teamSubtitle">Our Startup WeMade was build upon the foundations of a better more technologically available</p>
               <div class="about-team__video-section">
-                <button class="about-team__video-btn" onclick="openTeamVideo()">
-                  <svg
-                    class="video-icon"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M8 5V19L19 12L8 5Z" fill="currentColor" />
-                  </svg>
-                  Conócenos
-                </button>
+                <button class="about-team__video-btn" onclick="openTeamVideo()" data-i18n="meetUs">Conócenos</button>
               </div>
             </div>
             <div class="about-team__card">
@@ -648,11 +512,8 @@
         <!----------- BENEFITS SECTION ------------->
         <section id="work" class="benefits">
           <div class="benefits__container container">
-            <h2 class="benefits__title">Feeling like working with us?</h2>
-            <p class="benefits__subtitle">
-              Join EcoGuardian and enjoy a rewarding career as a specialist in
-              IoT and plant care.
-            </p>
+            <h2 class="benefits__title" data-i18n="workTitle">Feeling like working with us?</h2>
+            <p class="benefits__subtitle" data-i18n="workSubtitle">Join EcoGuardian and enjoy a rewarding career as a specialist in IoT and plant care.</p>
             <div class="benefits__grid">
               <article class="benefit">
                 <img
@@ -660,8 +521,8 @@
                   src="/images/work.png"
                   alt="Great Work Environment"
                 />
-                <h3 class="benefit__name">Great Work Environment</h3>
-                <p class="benefit__desc">
+                <h3 class="benefit__name" data-i18n="workEnv">Great Work Environment</h3>
+                <p class="benefit__desc" data-i18n="workEnvDesc">
                   Be part of a collaborative and innovative team that values
                   your ideas and growth.
                 </p>
@@ -672,8 +533,8 @@
                   src="/images/salary.png"
                   alt="Competitive Salary"
                 />
-                <h3 class="benefit__name">Competitive Salary</h3>
-                <p class="benefit__desc">
+                <h3 class="benefit__name" data-i18n="salary">Competitive Salary</h3>
+                <p class="benefit__desc" data-i18n="salaryDesc">
                   Receive a salary that reflects your skills, experience, and
                   dedication.
                 </p>
@@ -684,8 +545,8 @@
                   src="/images/capacitation.png"
                   alt="Continuous Training"
                 />
-                <h3 class="benefit__name">Continuous Training</h3>
-                <p class="benefit__desc">
+                <h3 class="benefit__name" data-i18n="training">Continuous Training</h3>
+                <p class="benefit__desc" data-i18n="trainingDesc">
                   Access ongoing learning opportunities and professional
                   development in IoT and automation.
                 </p>
@@ -696,8 +557,8 @@
                   src="/images/goal.png"
                   alt="Meaningful Impact"
                 />
-                <h3 class="benefit__name">Meaningful Impact</h3>
-                <p class="benefit__desc">
+                <h3 class="benefit__name" data-i18n="impact">Meaningful Impact</h3>
+                <p class="benefit__desc" data-i18n="impactDesc">
                   Help clients improve their plant care and sustainability,
                   making a real difference.
                 </p>
@@ -709,13 +570,8 @@
         <section id="contact-us" class="contact">
           <div class="contact__container container">
             <div class="contact__info">
-              <h1 class="contact__info-title">Tryout now</h1>
-              <p class="contact__info-description">
-                Are you passionate about IoT and plant care? We're looking for
-                experts to help us innovate and improve our automated irrigation
-                and plant care solutions. Share your skills and experience with
-                us!
-              </p>
+              <h1 class="contact__info-title" data-i18n="contactTitle">Tryout now</h1>
+              <p class="contact__info-description" data-i18n="contactDesc">Are you passionate about IoT and plant care? We're looking for experts to help us innovate and improve our automated irrigation and plant care solutions. Share your skills and experience with us!</p>
               <div class="contact__info-details">
                 <div class="contact__info-details-icon">
                   <svg
@@ -762,7 +618,7 @@
             <form class="contact__form">
               <div class="contact__form-group">
                 <div class="contact__form-field">
-                  <h2 class="contact__form-field-label">
+                  <h2 class="contact__form-field-label" data-i18n="firstName">
                     First Name
                     <span class="contact__form-field-required">*</span>
                   </h2>
@@ -774,7 +630,7 @@
                   />
                 </div>
                 <div class="contact__form-field">
-                  <h2 class="contact__form-field-label">
+                  <h2 class="contact__form-field-label" data-i18n="lastName">
                     Last Name
                     <span class="contact__form-field-required">*</span>
                   </h2>
@@ -787,7 +643,7 @@
                 </div>
               </div>
               <div class="contact__form-field">
-                <h2 class="contact__form-field-label">
+                <h2 class="contact__form-field-label" data-i18n="email">
                   Email <span class="contact__form-field-required">*</span>
                 </h2>
                 <input
@@ -799,7 +655,7 @@
                 />
               </div>
               <div class="contact__form-field">
-                <h2 class="contact__form-field-label">
+                <h2 class="contact__form-field-label" data-i18n="phone">
                   Phone Number
                   <span class="contact__form-field-required">*</span>
                 </h2>
@@ -812,7 +668,7 @@
                 />
               </div>
               <div class="contact__form-field">
-                <h2 class="contact__form-field-label">
+                <h2 class="contact__form-field-label" data-i18n="skills">
                   What skills or experience can you bring to our team?
                 </h2>
                 <textarea
@@ -826,11 +682,7 @@
                 id="submit-button"
                 type="button"
                 class="contact__form-button"
-                style="
-                  font-family: system-ui, -apple-system, BlinkMacSystemFont,
-                    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-                    'Helvetica Neue', sans-serif;
-                "
+                data-i18n="sendInfo"
               >
                 Send Information
               </button>
@@ -850,8 +702,8 @@
                 class="footer__logo"
               />
               <div class="footer__brand-text">
-                <h2 class="footer__brand-name">EcoGuardian</h2>
-                <p class="footer__tagline">Nurturing your future</p>
+                <h2 class="footer__brand-name" data-i18n="brand">EcoGuardian</h2>
+                <p class="footer__tagline" data-i18n="brandTag">Nurturing your future</p>
               </div>
             </div>
             <div class="footer__social-icons">
@@ -911,30 +763,26 @@
 
           <!-- Explore Links -->
           <div class="footer__nav-column">
-            <h3 class="footer__heading">Explore</h3>
+            <h3 class="footer__heading" data-i18n="explore">Explore</h3>
             <nav class="footer__nav">
               <ul class="footer__menu">
                 <li class="footer__menu-item">
-                  <a href="#hero" class="footer__menu-link">Home</a>
+                  <a href="#hero" class="footer__menu-link" data-i18n="navHome">Home</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#about-us" class="footer__menu-link"
-                    >About EcoGuardian</a
-                  >
+                  <a href="#about-us" class="footer__menu-link" data-i18n="footerAboutEco">About EcoGuardian</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#bento" class="footer__menu-link">Benefits</a>
+                  <a href="#bento" class="footer__menu-link" data-i18n="navBenefits">Benefits</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#about-team" class="footer__menu-link"
-                    >About the team</a
-                  >
+                  <a href="#about-team" class="footer__menu-link" data-i18n="footerAboutTeam">About the team</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#payments" class="footer__menu-link">Pricing</a>
+                  <a href="#payments" class="footer__menu-link" data-i18n="navPricing">Pricing</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="#contact-us" class="footer__menu-link">Contact</a>
+                  <a href="#contact-us" class="footer__menu-link" data-i18n="footerContact">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -942,7 +790,7 @@
 
           <!-- Contact Us -->
           <div class="footer__contact-column">
-            <h3 class="footer__heading">Contact us</h3>
+            <h3 class="footer__heading" data-i18n="footerContactUs">Contact us</h3>
             <div class="footer__contact-info">
               <a href="mailto:we.made@gmail.com" class="footer__contact-link">
                 <svg
