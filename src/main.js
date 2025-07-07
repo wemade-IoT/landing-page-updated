@@ -5,7 +5,6 @@ import './scripts/contact.js'
 import './scripts/video.js'
 import './scripts/bento.js'
 
-// Add professional style for language switcher buttons
 const langSwitcherStyle = document.createElement('style');
 langSwitcherStyle.textContent = `
 #lang-switcher button {
@@ -41,7 +40,6 @@ function updateLangSwitcherActive(lang) {
   }
 }
 
-// --- Language Switcher ---
 const translations = {
   en: {
     brand: 'EcoGuardian',
